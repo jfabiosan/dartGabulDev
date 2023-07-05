@@ -1,9 +1,9 @@
-class Carro {
+class Veiculo {
   String modelo;
   int ano;
   String montadora;
 
-  Carro({
+  Veiculo({
     required this.modelo,
     required this.ano,
     required this.montadora,
@@ -29,18 +29,18 @@ class Pessoa {
 }
 
 void main() {
-  final a = Carro(
+  final carro = Veiculo(
     modelo: 'fusca',
     ano: 1989,
     montadora: 'volks',
   );
-  final p = Pessoa(
+  final girl = Pessoa(
     nome: 'Cristiane',
     cpf: 22233345655,
     rg: 0225554152,
     endereco: 'Rua kkk',
   );
-  a.carUsage(2023);
-  print('O meu ${a.modelo} tem ${a.ano} anos de uso');
-  print(p.nome);
+  carro.carUsage(2023);
+  print('O meu ${carro.modelo} tem ${carro.ano} anos de uso');
+  print(girl.nome);
 }
